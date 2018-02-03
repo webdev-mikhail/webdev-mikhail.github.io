@@ -54,6 +54,10 @@ header {
     animation-duration: 3s;
     animation-delay: 0.3s;
     animation-fill-mode: forwards;
+    transition:0.2s;
+}
+.header-button {
+	text-shadow: none;
 }
 @keyframes small-effect {
 	0% {
