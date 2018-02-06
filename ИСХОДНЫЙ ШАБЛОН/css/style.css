@@ -1,0 +1,270 @@
+/* Здесь будут храниться стили нашего сайта */
+
+body {
+	margin: 0;
+	font-family: 'Roboto';
+	font-size: 18px;
+}
+img {
+	max-width:100%;
+}
+header {
+	padding-top: 59px;
+	background-color: #3a7dfd;
+	color:#fff;
+	padding-bottom: 22px;
+	
+}
+.header-pretitle {
+	padding-top: 102px;
+}
+.header-title {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 46.81px;
+	margin-top: 21px;
+	text-shadow: 0 1px 1px;
+}
+.header-subtitle {
+	margin-top: 20px;
+}
+.header-img {
+	position:relative;
+	z-index:0;
+}
+.header-img-1 {
+	position:absolute;
+	top:70px;
+	bottom:0;
+	right:0;
+	left:70px;
+	z-index:1;
+	width:370px;
+	height: 230px;
+}
+@keyframes button-effect {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+.header-button {
+	display: inline-block;
+	text-decoration: none;
+    box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+    border-radius: 50px;
+    background-color: #ffffff;
+    opacity: 0;
+    font-size: 18px;
+    color: #072b6f;
+    font-weight: 700;
+    padding: 17px 55px;
+    margin-top: 33px;
+    cursor: pointer;
+    animation-name: button-effect;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    transition:0.2s;
+}
+.header-button {
+	text-shadow: none;
+}
+@keyframes small-effect {
+	0% {
+		transform: translateY(30px);
+		opacity: 0;
+	}
+	
+	100% {
+		transform: translateY(0px);
+		opacity:1;
+	}
+}
+header small {
+	font-size: 12px;
+	display:block;
+	text-align: center;
+	margin-top: 9px;
+	transform:translateY(30px);
+	opacity:0;
+	animation-name:small-effect;
+	animation-duration: 1s;
+	animation-delay:0.2s;
+	animation-fill-mode: forwards;
+
+}
+
+.header-button-block {
+	max-width: 210px;
+
+}
+/* Секция портфолио*/
+.portfolio {
+	background-color: #dddddd;
+	padding-top: 44px;
+	padding-bottom: 71px;
+}
+.portfolio-block {
+	background-color: #fff;
+	padding-top: 29px;
+	padding-bottom: 44px;
+}
+.portfolio-title,
+.portfolio-subtitle {
+	text-align: center;
+}
+.portfolio-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #072b6f;
+	margin-bottom: 10px;
+}
+.portfolio-subtitle {
+	margin-top: 10px;
+	color: #7bb9ff;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.portfolio-col-1 {
+	padding-left: 50px;
+}
+.portfolio-col-2 {
+    padding-right: 50px;
+}
+.portfolio-block h3 {
+    color: #072b6f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.portfolio-block .info {
+	color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 400;
+}
+.portfolio-block a {
+     color: #072b6f;
+     font-size: 14px;
+     font-weight: 400;
+     text-decoration: underline;
+}
+/* Оформление подвала */
+footer {
+	background-color: #3a7dfd;
+	color:#fff;
+	padding-top: 60px;
+	padding-bottom: 110px;
+	display:flex;
+	justify-content: space-around;
+}
+.footer-author {
+	margin-bottom: 7px;
+    font-size: 24px;
+    }
+.footer-text {
+	margin-top:0;
+}   
+.social-block {
+	text-align: center;
+}
+.social-block a {
+	display:inline-block;
+	margin-right: 13px;
+	margin-left: 13px;
+	
+}
+.social-block a:hover {
+    transform: scale(1.2, 1.2);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+.footer-cta-block {
+	text-align: center;
+}
+
+.footer-cta {
+	margin-bottom: 13px;
+}
+.footer-button {
+	text-decoration: none;
+	display: inline-block;
+	border:1px solid #ffffff;
+	background-color: transparent;
+	color:#ffffff;
+	font-size: 18px;
+	border-radius: 50px;
+	padding:12px 40px;
+	transition-property: :background-color;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+.footer-button:hover {
+	background-color:#fff;
+	color: #072b6f;
+}
+@media(max-width: 1200px) {
+	.header-pretitle {
+	padding-top: 60px;
+ }
+
+}
+@media(max-width:992px) {
+	.header-img {
+		display: none;
+	}
+	.header-img-1 {
+		display: none;
+	}
+	.header-pretitle {
+	padding-top: 10px;
+ }
+ .footer-author {
+ 	font-size: 18px;
+ }
+ .footer-text {
+ 	font-size:14px;
+ }
+ .social-block a {
+ 	margin-right: 5px;
+ 	margin-left: 5px;
+ }
+ .social-block img {
+ 	width:30px;
+ }
+ .footer-button {
+ 	font-size: 14px;
+ 	padding: 8px 35px;
+ }
+}
+@media(max-width: 768px) {
+	.header-pretitle,
+	.header-title,
+	.header-subtitle {
+		text-align: center;
+}
+ .header-button-block {
+ 	margin:auto;
+ }
+
+	.portfolio-col-1 {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 40px;
+	}
+	.portfolio-col-2 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.footer-author,
+	.footer-text {
+	 text-align:center;
+    }
+
+
+	
+
+}
